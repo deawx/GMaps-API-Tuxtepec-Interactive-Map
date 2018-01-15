@@ -157,8 +157,8 @@
 
         }
 
-        function geoWithOutLocation(){
-            geoError();
+
+        function geoWithSpecificPosition(lat, lng){
             var styles = {
                 default: null,
                 hide: [
@@ -169,8 +169,8 @@
                 ]
              };
             //var positionTuxtepec = new google.maps.LatLng(18.085863, -96.134968);
-            var latitude = 18.085863;
-            var longitude = -96.134968;
+            var latitude = lat;
+            var longitude = lng;
             var directionsService = new google.maps.DirectionsService;
             var directionsDisplay = new google.maps.DirectionsRenderer;
             myLatLng = {
@@ -195,6 +195,17 @@
             //            mapTypeId: 'roadmap'
             //        };
             // Multiple Markers
+            google.maps.event.addListener(map, 'dblclick', function(event) {
+               //placeMarker(event.latLng);
+               //alert(event.latLng);
+
+                var latitude  = event.latLng.lat();
+                var long = event.latLng.lng();
+
+                geoWithSpecificPosition(latitude, long);
+
+            });
+
             var marker = new google.maps.Marker({
                 position: myLatLng,
                 map: map,
@@ -257,6 +268,153 @@
                     title: markers[i][0]
                 });
 
+                // Allow each marker to have an info window
+                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() {
+                        infoWindow.setContent(infoWindowContent[i][0]);
+                        infoWindow.open(map, marker);
+                        latit = marker.getPosition().lat();
+                        longit = marker.getPosition().lng();
+                        // console.log("lat: " + latit);
+                        // console.log("lng: " + longit);
+                    }
+                })(marker, i));
+                marker.addListener('click', function() {
+                    directionsService.route({
+                        // origin: document.getElementById('start').value,
+                        origin: myLatLng,
+                        // destination: marker.getPosition(),
+                        destination: {
+                            lat: latit,
+                            lng: longit
+                        },
+                        travelMode: 'DRIVING'
+                    }, function(response, status) {
+                        if (status === 'OK') {
+                            directionsDisplay.setDirections(response);
+                        } else {
+                            window.alert('Directions request failed due to ' + status);
+                        }
+                    });
+                });
+                // Automatically center the map fitting all markers on the screen
+                map.fitBounds(bounds);
+            }
+
+            map.setOptions({styles: styles['hide']});
+
+        }
+
+        function geoWithOutLocation(){
+            geoError();
+            var styles = {
+                default: null,
+                hide: [
+                  {
+                    featureType: 'poi.business',
+                    stylers: [{visibility: 'off'}]
+                  }
+                ]
+             };
+            //var positionTuxtepec = new google.maps.LatLng(18.085863, -96.134968);
+            var latitude = 18.085863;
+            var longitude = -96.134968;
+            var directionsService = new google.maps.DirectionsService;
+            var directionsDisplay = new google.maps.DirectionsRenderer;
+            myLatLng = {
+                lat: latitude,
+                lng: longitude
+            };
+            var mapProp = {
+                //            center: new google.maps.LatLng(latitude, longitude), // puts your current location at the centre of the map,
+                zoom: 6,
+                mapTypeControl: false,
+                center: {lat: -18.085863, lng: 96.134968},
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            // Apply new JSON when the user chooses to hide/show features.
+
+            var directionsService = new google.maps.DirectionsService;
+            var directionsDisplay = new google.maps.DirectionsRenderer;
+            //call renderer to display directions
+            directionsDisplay.setMap(map);
+            var bounds = new google.maps.LatLngBounds();
+            //        var mapOptions = {
+            //            mapTypeId: 'roadmap'
+            //        };
+            // Multiple Markers
+            google.maps.event.addListener(map, 'dblclick', function(event) {
+               //placeMarker(event.latLng);
+               //alert(event.latLng);
+
+               var latitude  = event.latLng.lat();
+               var long = event.latLng.lng();
+
+               geoWithSpecificPosition(latitude, long);
+
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                icon: "images/blank.png",
+                title: 'My location'
+            });
+
+            map.setCenter(position);
+
+            var markers = [
+                ['Hotel Gran Plaza', 18.091925, -96.133056, 'images/hotel.png'],
+                ['Restaurante CasaBlanca', 18.081716, -96.119721, 'images/restaurantes.png'],
+                ['Cinemex', 18.089257, -96.132763, 'images/cine.png'],
+                ['ISSTE', 18.081970, -96.151934, 'images/hospital.png'],
+                ['my current location', latitude, longitude, 'images/me.png']
+            ];
+            // Info Window Content
+            var infoWindowContent = [
+                ['<div class="info_content">' +
+                    '<h3>Hotel Gran Plaza Tuxtepec</h3>' +
+                    '<p>68370, Río Grande LB, Los Angeles, San Juan Bautista Tuxtepec, Oax.</p>' +
+                    '<img src="images/logoplaza.png" width="400" height="200">' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>Espadas Casablanca</h3>' +
+                    '<p>5 de Mayo 438, Tuxtepec Centro, 68300 San Juan Bautista Tuxtepec, Oax.</p>' +
+                    '<img src="images/casablanca.png" width="400" height="200">' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>Cinemex</h3>' +
+                    '<p>Benito Juárez 795, Los Angeles, 68370 San Juan Bautista Tuxtepec, Oax.</p>' +
+                    '<img src="images/cinemexx.jpg" width="400" height="200">' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>ISSTE</h3>' +
+                    '<p>La Rosalía, 68340 San Juan Bautista Tuxtepec, Oaxaca</p>' +
+                    '<img src="images/issste.jpg" width="400" height="200">' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>Posicion actual de el usuario</h3>' +
+                    '<p>Para saber como llegar a algun lugar presione click en alguno de los iconos de Hoteles, Restaurantes, etc.</p>' +
+                    '</div>'
+                ]
+            ];
+            // Display multiple markers on a map
+            var infoWindow = new google.maps.InfoWindow(),
+                marker, i;
+            // Loop through our array of markers & place each one on the map
+            for (i = 0; i < markers.length; i++) {
+                var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+                bounds.extend(position);
+                marker = new google.maps.Marker({
+                    position: position,
+                    icon: markers[i][3],
+                    map: map,
+                    title: markers[i][0]
+                });
 
                 // Allow each marker to have an info window
                 google.maps.event.addListener(marker, 'click', (function(marker, i) {
@@ -299,7 +457,7 @@
         }
 
         function getLocation() {
-            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
                 geoWithOutLocation();
             }else {
 
