@@ -27,81 +27,238 @@
             ]
          };
 
+
         var markers = [
 
             /* @TODO Hoteles */
-            ['HOTEL BEST WESTERN PLUS', 18.091914, -96.133151, 'images/hotel.png'],
-            ['HOTEL CENTRAL', 18.081121, -96.123351, 'images/hotel.png'],
-            ['HOTEL EL RANCHO ', 18.089493, -96.126395, 'images/hotel.png'],
-            ['HOTEL FRAGATA', 18.081980, -96.127949, 'images/hotel.png'],
-            ['HOTEL GUADALUPANA ', 18.081603, -96.125655, 'images/hotel.png'],
-            ['HOTEL HACIENDA', 18.084552, -96.137378, 'images/hotel.png'],
-            ['HOTEL HOSTAL ALDY', 18.084656, -96.135345, 'images/hotel.png'],
-            ['HOTEL LA CHOCA', 18.082865, -96.134191, 'images/hotel.png'],
-            ['HOTEL LA MISIÓN', 18.084794, -96.118516, 'images/hotel.png'],
-            ['HOTEL LAS ISLAS', 18.088739, -96.116938, 'images/hotel.png'],
-            ['HOTEL MARÍA DE LOURDES', 18.084136, -96.128487, 'images/hotel.png'],
-            ['HOTEL MARY', 18.084503, -96.118524, 'images/hotel.png'],
-            ['HOTEL MESON DE LA CHINANTLA', 18.092130, -96.128705, 'images/hotel.png'],
-            ['HOTEL MESON DE LA RIVERA', 18.093933, -96.116328, 'images/hotel.png'],
-            ['HOTEL MIRADOR', 18.083315, -96.137502, 'images/hotel.png'],
-            ['HOTEL PRINCIPE DE PAZ', 18.082859, -96.134505, 'images/hotel.png'],
-            ['HOTEL PLAZA SAN CARLOS', 18.081034, -96.121448, 'images/hotel.png'],
-            ['HOTEL POSADA DEL SOL', 18.082594, -96.126614, 'images/hotel.png'],
-            ['HOTEL POSADA PASO REAL', 18.081574, -96.125878, 'images/hotel.png'],
-            ['HOTEL ROBLES', 18.084083, -96.128999, 'images/hotel.png'],
-            ['HOTEL SACRE', 18.084722, -96.126413, 'images/hotel.png'],
-            ['HOTEL SAN JUAN', 18.091060, -96.127959, 'images/hotel.png'],
-            ['HOTEL TUXTEPEC', 18.081762, -96.126049, 'images/hotel.png'],
-            ['HOTEL VILLA ESMERALDA', 18.090032, -96.128403, 'images/hotel.png'],
-            ['VILLA BLANCA SUITE', 18.078582, -96.136105, 'images/hotel.png'],
-            ['HOTEL VERDI', 18.109369, -96.137632, 'images/hotel.png'],
-            ['HOTEL CITY JUNIOR TUXTEPEC', 18.094836, -96.129143, 'images/hotel.png'],
-            ['Restaurante CasaBlanca', 18.081716, -96.119721, 'images/restaurantes.png'],
-            ['Cinemex', 18.089257, -96.132763, 'images/cine.png'],
-            ['ISSTE', 18.081970, -96.151934, 'images/hospital.png'],
+            ['HOTEL BEST WESTERN PLUS', 18.091914, -96.133151, 'images/icon_hoteles.png'],
+            ['HOTEL CENTRAL', 18.081121, -96.123351, 'images/icon_hoteles.png'],
+            ['HOTEL EL RANCHO ', 18.089493, -96.126395, 'images/icon_hoteles.png'],
+            ['HOTEL FRAGATA', 18.081980, -96.127949, 'images/icon_hoteles.png'],
+            ['HOTEL GUADALUPANA ', 18.081603, -96.125655, 'images/icon_hoteles.png'],
+            ['HOTEL HACIENDA', 18.084552, -96.137378, 'images/icon_hoteles.png'],
+            ['HOTEL HOSTAL ALDY', 18.084656, -96.135345, 'images/icon_hoteles.png'],
+            ['HOTEL LA CHOCA', 18.082865, -96.134191, 'images/icon_hoteles.png'],
+            ['HOTEL LA MISIÓN', 18.084794, -96.118516, 'images/icon_hoteles.png'],
+            ['HOTEL LAS ISLAS', 18.088739, -96.116938, 'images/icon_hoteles.png'],
+            ['HOTEL MARÍA DE LOURDES', 18.084136, -96.128487, 'images/icon_hoteles.png'],
+            ['HOTEL MARY', 18.084503, -96.118524, 'images/icon_hoteles.png'],
+            ['HOTEL MESON DE LA CHINANTLA', 18.092130, -96.128705, 'images/icon_hoteles.png'],
+            ['HOTEL MESON DE LA RIVERA', 18.093933, -96.116328, 'images/icon_hoteles.png'],
+            ['HOTEL MIRADOR', 18.083315, -96.137502, 'images/icon_hoteles.png'],
+            ['HOTEL PRINCIPE DE PAZ', 18.082859, -96.134505, 'images/icon_hoteles.png'],
+            ['HOTEL PLAZA SAN CARLOS', 18.081034, -96.121448, 'images/icon_hoteles.png'],
+            ['HOTEL POSADA DEL SOL', 18.082594, -96.126614, 'images/icon_hoteles.png'],
+            ['HOTEL POSADA PASO REAL', 18.081574, -96.125878, 'images/icon_hoteles.png'],
+            ['HOTEL ROBLES', 18.084083, -96.128999, 'images/icon_hoteles.png'],
+            ['HOTEL SACRE', 18.084722, -96.126413, 'images/icon_hoteles.png'],
+            ['HOTEL SAN JUAN', 18.091060, -96.127959, 'images/icon_hoteles.png'],
+            ['HOTEL TUXTEPEC', 18.081762, -96.126049, 'images/icon_hoteles.png'],
+            ['HOTEL VILLA ESMERALDA', 18.090032, -96.128403, 'images/icon_hoteles.png'],
+            ['VILLA BLANCA SUITE', 18.078582, -96.136105, 'images/icon_hoteles.png'],
+            ['HOTEL VERDI', 18.109369, -96.137632, 'images/icon_hoteles.png'],
+            ['HOTEL CITY JUNIOR TUXTEPEC', 18.094836, -96.129143, 'images/icon_hoteles.png'],
 
             /* @TODO Bares */
-            ['BAR CHERRAS', 18.080967, -96.117538, 'images/cine.png'],
-            ['BLUE BAR', 18.088280, -96.146160, 'images/cine.png'],
-            ['BAR CASA BLANCA', 18.090898, -96.128816, 'images/cine.png'],
-            ['BAR 56', 18.099009, -96.130508, 'images/cine.png'],
-            ['ENIGMA CAROKE BAR', 18.094443, -96.122480, 'images/cine.png'],
-            ['IGUANA AZUL BAR', 18.094509, -96.122989, 'images/cine.png'],
-            ['BAR LATINOS', 18.080388, -96.118070, 'images/cine.png'],
-            ['LA CAVA', 18.084309, -96.133665, 'images/cine.png'],
-            ['MR. BEER', 18.090035, -96.126758, 'images/cine.png'],
-            ['BAR LA CASCADA', 18.088331, -96.130370, 'images/cine.png'],
-            ['EL RINCON DEL ARTISTA', 18.088331, -96.130370, 'images/cine.png'],
-            ['EL IMPERIO CENTRO NOCTURNO', 18.091960, -96.127420, 'images/cine.png'],
-            ['LAS YARDAS DE DON JUAN', 18.081454, -96.119695, 'images/cine.png'],
-            ['LA MESTIZA SNAK BAR', 18.090635, -96.134086, 'images/cine.png'],
-            ['BAR LA ESTACION', 18.082443, -96.145273, 'images/cine.png'],
-            ['LOLA BAR', 18.082713, -96.126495, 'images/cine.png'],
-            ['BAR SABORES', 18.083577, -96.122934, 'images/cine.png'],
-            ['BARRICAS', 18.094484, -96.121143, 'images/cine.png'],
-            ['SNACK BAR CIELO ABIERTO', 18.088722, -96.116929, 'images/cine.png'],
-            ['WINGS ARMY', 18.094468, -96.129097, 'images/cine.png'],
-            ['ROSSO TERRAZA&BAR', 18.084600, -96.109163, 'images/cine.png'],
-            ['KARMA VIDEO BAR', 18.091941, -96.112392, 'images/cine.png'],
+            ['BAR CHERRAS', 18.080967, -96.117538, 'images/icon_bares.png'],
+            ['BLUE BAR', 18.088280, -96.146160, 'images/icon_bares.png'],
+            ['BAR CASA BLANCA', 18.090898, -96.128816, 'images/icon_bares.png'],
+            ['BAR 56', 18.099009, -96.130508, 'images/icon_bares.png'],
+            ['ENIGMA CAROKE BAR', 18.094443, -96.122480, 'images/icon_bares.png'],
+            ['IGUANA AZUL BAR', 18.094509, -96.122989, 'images/icon_bares.png'],
+            ['BAR LATINOS', 18.080388, -96.118070, 'images/icon_bares.png'],
+            ['LA CAVA', 18.084309, -96.133665, 'images/icon_bares.png'],
+            ['MR. BEER', 18.090035, -96.126758, 'images/icon_bares.png'],
+            ['BAR LA CASCADA', 18.088331, -96.130370, 'images/icon_bares.png'],
+            ['EL RINCON DEL ARTISTA', 18.088331, -96.130370, 'images/icon_bares.png'],
+            ['EL IMPERIO CENTRO NOCTURNO', 18.091960, -96.127420, 'images/icon_bares.png'],
+            ['LAS YARDAS DE DON JUAN', 18.081454, -96.119695, 'images/icon_bares.png'],
+            ['LA MESTIZA SNAK BAR', 18.090635, -96.134086, 'images/icon_bares.png'],
+            ['BAR LA ESTACION', 18.082443, -96.145273, 'images/icon_bares.png'],
+            ['LOLA BAR', 18.082713, -96.126495, 'images/icon_bares.png'],
+            ['BAR SABORES', 18.083577, -96.122934, 'images/icon_bares.png'],
+            ['BARRICAS', 18.094484, -96.121143, 'images/icon_bares.png'],
+            ['SNACK BAR CIELO ABIERTO', 18.088722, -96.116929, 'images/icon_bares.png'],
+            ['WINGS ARMY', 18.094468, -96.129097, 'images/icon_bares.png'],
+            ['ROSSO TERRAZA&BAR', 18.084600, -96.109163, 'images/icon_bares.png'],
+            ['KARMA VIDEO BAR', 18.091941, -96.112392, 'images/icon_bares.png'],
 
             /* @TODO Cafes */
-            ['CAFÉ BISTRO', 18.082112, -96.118773, 'images/restaurantes.png'],
-            ['CAFÉ CALESA', 18.082980, -96.121371, 'images/restaurantes.png'],
-            ['KALDI FOOD COFFEE', 18.088978, -96.132586, 'images/restaurantes.png'],
-            ['LA PARROQUIA DE VERACRUZ', 18.125423, -96.136080, 'images/restaurantes.png'],
-            ['MARQUESITAS YAYA', 18.080697, -96.120062, 'images/restaurantes.png'],
-            ['CAFÉ CHINANTLA', 18.085651, -96.124941, 'images/restaurantes.png'],
-            ['CAFFE RICETTA', 18.082644, -96.123746, 'images/restaurantes.png'],
-            ['MR. KALDI COFFEE', 18.085924, -96.151075, 'images/restaurantes.png'],
-            ['DE ALLENDE CAFÉ', 18.081931, -96.118801, 'images/restaurantes.png'],
-            ['SOLUNA CAFÉ', 18.082444, -96.119141, 'images/restaurantes.png'],
-            ['CAFÉ VENECIA', 18.090888, -96.133230, 'images/restaurantes.png'],
-            ['CAFÉ VISTABELLA', 18.081718, -96.128019, 'images/restaurantes.png'],
-            ['CIBER CAFÉ FUTURAMA', 18.082920, -96.120876, 'images/restaurantes.png'],
+            ['CAFÉ BISTRO', 18.082112, -96.118773, 'images/icon_cafes.png'],
+            ['CAFÉ CALESA', 18.082980, -96.121371, 'images/icon_cafes.png'],
+            ['KALDI FOOD COFFEE', 18.088978, -96.132586, 'images/icon_pizzerias.png'],
+            ['LA PARROQUIA DE VERACRUZ', 18.125423, -96.136080, 'images/icon_cafes.png'],
+            ['MARQUESITAS YAYA', 18.080697, -96.120062, 'images/icon_cafes.png'],
+            ['CAFÉ CHINANTLA', 18.085651, -96.124941, 'images/icon_cafes.png'],
+            ['CAFFE RICETTA', 18.082644, -96.123746, 'images/icon_cafes.png'],
+            ['MR. KALDI COFFEE', 18.085924, -96.151075, 'images/icon_cafes.png'],
+            ['DE ALLENDE CAFÉ', 18.081931, -96.118801, 'images/icon_cafes.png'],
+            ['SOLUNA CAFÉ', 18.082444, -96.119141, 'images/icon_cafes.png'],
+            ['CAFÉ VENECIA', 18.090888, -96.133230, 'images/icon_cafes.png'],
+            ['CAFÉ VISTABELLA', 18.081718, -96.128019, 'images/icon_cafes.png'],
+            ['CIBER CAFÉ FUTURAMA', 18.082920, -96.120876, 'images/icon_cafes.png'],
 
+            /* @TODO Pizzerias */
+            ['DOMINOS PIZZAS', 18.089935, -96.130213,'images/icon_pizzerias.png'],
+            ['MANA PIZZA', 18.094434, -96.134932,'images/icon_pizzerias.png'],
+            ['PIZZAS HENRY', 18.086428, -96.122769,'images/icon_pizzerias.png'],
+            ['PIZZAS GIUSEPPE', 18.089376, -96.123074,'images/icon_pizzerias.png'],
+            ['PIZZERIA DOLCE VITA', 18.089565, -96.126205,'images/icon_pizzerias.png'],
+            ['PIZZERIA OLEO', 18.081752, -96.127435,'images/icon_pizzerias.png'],
+
+
+            /* @TODO Gastronomia */
+
+            ['ASADERO BONANZA', 18.090403, -96.118412,'images/icon_gastronomia.png'],
+            ['COMEDOR LA SALSA', 18.082505, -96.124942,'images/icon_gastronomia.png'],
+            ['DON ASADERO STAKHOUSE', 18.087580, -96.109773,'images/icon_gastronomia.png'],
+            ['DOÑA CRYSTI', 18.086492, -96.126210,'images/icon_gastronomia.png'],
+            ['EL CANELO', 18.081523, -96.125264,'images/icon_gastronomia.png'],
+            ['EL PESCADOR', 18.091731, -96.124049,'images/icon_gastronomia.png'],
+            ['LA PALAPA DE CARLIN', 18.104668, -96.140220,'images/icon_gastronomia.png'],
+            ['LA QUINTA BUGAMBILIA', 18.097055, -96.107275,'images/icon_gastronomia.png'],
+            ['LOS MOLCAJETES', 18.090336, -96.123263,'images/icon_gastronomia.png'],
+            ['POLLOS A LA LEÑA PALMA', 18.083501, -96.137524,'images/icon_gastronomia.png'],
+            ['REST. LOSJAROCHOS', 18.087303, -96.127295,'images/icon_gastronomia.png'],
+            ['REST. JARDIN DEL EDEN (H. HACIENDA', 18.084393, -96.137385,'images/icon_gastronomia.png'],
+            ['REST. EL PESEBRE', 18.089593, -96.126471,'images/icon_gastronomia.png'],
+            ['REST. LAS CAZUELAS', 18.089134, -96.129255,'images/icon_gastronomia.png'],
+            ['REST. BARRO NEGRO', 18.089994, -96.127946,'images/icon_gastronomia.png'],
+            ['REST. BLA BLA', 18.081869, -96.123049,'images/icon_gastronomia.png'],
+            ['REST. BUALA', 18.085760, -96.120037,'images/icon_gastronomia.png'],
+            ['REST. CAMPESTRE NANIXE', 18.063703, -96.124900,'images/icon_gastronomia.png'],
+            ['REST. CAPORALES', 18.081614, -96.125331,'images/icon_gastronomia.png'],
+            ['REST. CARNITAS MICHOACAN', 18.091252, -96.128315,'images/icon_gastronomia.png'],
+            ['REST. CASA BLANCA', 18.081723, -96.119725,'images/icon_gastronomia.png'],
+            ['REST. CERRO DE ORO', 18.096730, -96.111407,'images/icon_gastronomia.png'],
+            ['REST. CUATRO CAMINOS', 18.073795, -96.132462,'images/icon_gastronomia.png'],
+            ['REST. DON TIMON', 18.089264, -96.135154,'images/icon_gastronomia.png'],
+            ['REST. EL ENCANTO JAROCHO', 18.089797, -96.124908,'images/icon_gastronomia.png'],
+            ['REST. EL FARO', 18.079083, -96.123800,'images/icon_gastronomia.png'],
+            ['REST. EL FAROLITO', 18.089828, -96.120906,'images/icon_gastronomia.png'],
+            ['REST. EL MANGLAR (PRINCIPE P)', 18.082862, -96.134517,'images/icon_gastronomia.png'],
+            ['REST. EL PARY', 18.063666, -96.147053,'images/icon_gastronomia.png'],
+            ['REST. EL TIZONCITO', 18.082783, -96.124211,'images/icon_gastronomia.png'],
+            ['REST. FINCA SAN ROSENDO', 18.085909, -96.133988,'images/icon_gastronomia.png'],
+            ['REST. GRILLATA', 18.081608, -96.119766,'images/icon_gastronomia.png'],
+            ['REST. GUELATAO (H. WESTERN)', 18.092031, -96.133100,'images/icon_gastronomia.png'],
+            ['REST. HERMILOS', 18.083620, -96.130712,'images/icon_gastronomia.png'],
+            ['REST. HUMAREDA.', 18.089782, -96.120900,'images/icon_gastronomia.png'],
+            ['REST. LA CARRETA', 18.099193, -96.130548,'images/icon_gastronomia.png'],
+            ['REST. LA ESTAMPIDA', 18.094047, -96.115983,'images/icon_gastronomia.png'],
+            ['REST. LA SALSA', 18.091530, -96.107475,'images/icon_gastronomia.png'],
+            ['REST. LOS COBOS', 18.067049, -96.141691,'images/icon_gastronomia.png'],
+            ['REST. LOS GUISOS', 18.095739, -96.136382,'images/icon_gastronomia.png'],
+            ['REST. MAR-VIC', 18.081580, -96.123664,'images/icon_gastronomia.png'],
+            ['REST. MOMENTOS', 18.092055, -96.121429,'images/icon_gastronomia.png'],
+            ['REST. PACO POLLO', 18.084208, -96.126603,'images/icon_gastronomia.png'],
+            ['REST. PARRILLA MAR YTIERRA', 18.089480, -96.124183,'images/icon_gastronomia.png'],
+            ['REST. PASO REAL', 18.081692, -96.125759,'images/icon_gastronomia.png'],
+            ['REST. RULOS', 18.083642, -96.117580,'images/icon_gastronomia.png'],
+            ['REST. SALAMANDRA', 18.095552, -96.112006,'images/icon_gastronomia.png'],
+            ['REST. TAMPICO', 18.087040, -96.125701,'images/icon_gastronomia.png'],
+            ['REST.LA SUPER TORTA', 18.082549, -96.123584,'images/icon_gastronomia.png'],
+            ['REST.TAQUERIALUPITA 2', 18.089973, -96.126448,'images/icon_gastronomia.png'],
+            ['TAQUERIA EL REPOSO', 18.082562, -96.119475,'images/icon_gastronomia.png'],
+            ['TAQUERIA LUPITA', 18.088367, -96.126988,'images/icon_gastronomia.png'],
+            ['REST.CROSTINI', 18.088495, -96.117025,'images/icon_gastronomia.png'],
+            ['REST. FUSSION', 18.088712, -96.116979,'images/icon_gastronomia.png'],
+            ['LA VENDIMIA', 18.094483, -96.123717,'images/icon_gastronomia.png'],
+            ['EL TACOTE', 18.082374, -96.124863,'images/icon_gastronomia.png'],
+            ['EMPORIO TACO', 18.081774, -96.119970,'images/icon_gastronomia.png'],
+            ['REST. FERVOLIA 86', 18.086710, -96.130091,'images/icon_gastronomia.png'],
+            ['MARISCOS LA OAXAQUEÑA', 18.089699, -96.116571,'images/icon_gastronomia.png'],
+            ['VIPS', 18.088253, -96.132476,'images/icon_gastronomia.png'],
+            ['MC DONALDS', 18.089783, -96.130992,'images/icon_gastronomia.png'],
+            ['BURGER KING', 18.088656, -96.132910,'images/icon_gastronomia.png'],
+
+            /* @TODO Parques */
+            ['PARQUE BENITO JUAREZ', 18.081608, -96.118456,'images/icon_parques.png'],
+            ['PARQUE MIGUEL HIDALGO', 18.083214, -96.131095,'images/icon_parques.png'],
+            ['PARQUE JESUS CARRANZA', 18.083220, -96.115494,'images/icon_parques.png'],
+            ['PARQUE BICENTENARIO', 18.091268, -96.127091,'images/icon_parques.png'],
+            ['MALECON VICTOR BRAVO AHUJA', 18.080146, -96.119829,'images/icon_parques.png'],
+            ['MALECON EL MIRADOR', 18.081223, -96.125378,'images/icon_parques.png'],
+            ['PARQUE LINEAL BENITO JUAREZ', 18.087631, -96.132992,'images/icon_parques.png'],
+            ['PARQUE EL FLAMENCO', 18.094884, -96.121394,'images/icon_parques.png'],
+            ['EL PRELUDIO DEL BRINCO (LA TIERRA DEL CONEJO)', 18.108795, -96.134715,'images/icon_parques.png'],
+            ['ESTATUA LA FLOR DE PIÑA', 18.085923, -96.134993,'images/icon_parques.png'],
+            ['CASA DE LA CULTURA DR. VICTOR BRAVO AHUJA', 18.087717, -96.130789,'images/icon_parques.png'],
+            ['TEATRO MIGUEL HIDALGO', 18.081680, -96.118566,'images/icon_parques.png'],
+            ['TEATRO CASA DE LA CULTURA "DR. VICTOR BRAVO AHUJA"', 18.088188, -96.131366,'images/icon_parques.png'],
+            ['CINEMEX', 18.088916, -96.132852,'images/icon_parques.png'],
+            ['MULTIPLAZA TUXTEPEC', 18.088916, -96.132852,'images/icon_parques.png'],
+
+            /* @TODO Moteles */
+
+            ['QUINTA LAS PALOMAS', 18.084238, -96.156256,'images/icon_moteles.png'],
+            ['EL SECRETO', 18.108847, -96.134543,'images/icon_moteles.png'],
+            ['VENUS', 18.093889, -96.116413,'images/icon_moteles.png'],
+            ['SEDUCCION', 18.083067, -96.152189,'images/icon_moteles.png'],
+            ['OLYMPO', 18.108986, -96.136915,'images/icon_moteles.png'],
+            ['LAS BRISAS', 18.060763, -96.149217,'images/icon_moteles.png'],
+            ['EL REPOSO', 18.091512, -96.129243,'images/icon_moteles.png'],
+            ['EL REPOSO 2', 18.063297, -96.144470,'images/icon_moteles.png'],
+
+            /* @TODO Bancos */
+            ['SCOTIABANK', 18.080883, -96.122503,'images/icon_bancos.png'],
+            ['BBVA BANCOMER', 18.082260, -96.122446,'images/icon_bancos.png'],
+            ['BBVA BANCOMER', 18.081150, -96.124275,'images/icon_bancos.png'],
+            ['SANTANDER MULTIPLAZA', 18.091005, -96.133315,'images/icon_bancos.png'],
+            ['BANCO FORJADORES', 18.082200, -96.129467,'images/icon_bancos.png'],
+            ['SANTANDER', 18.081899, -96.123691,'images/icon_bancos.png'],
+            ['HSBC', 18.082038, -96.128430,'images/icon_bancos.png'],
+            ['INBURSA', 18.089999, -96.133001,'images/icon_bancos.png'],
+            ['BANAMEX', 18.080587, -96.120416,'images/icon_bancos.png'],
+            ['CAJA POPULAR MEXICANA', 18.083157, -96.129024,'images/icon_bancos.png'],
+            ['BANORTE', 18.082251, -96.122261,'images/icon_bancos.png'],
+            ['BANCO AZTECA', 18.081613, -96.125442,'images/icon_bancos.png'],
+
+            /* @TODO Cajeros */
+            ['CAJERO BANORTE', 18.081185, -96.118315,'images/icon_cajeros.png'],
+            ['CAJERO BANORTE', 18.080984, -96.118092,'images/icon_cajeros.png'],
+            ['CAJERO BANCOMER', 18.081196, -96.118381,'images/icon_cajeros.png'],
+            ['CAJERO SCOTIABANK', 18.080884, -96.122504,'images/icon_cajeros.png'],
+            ['CAJERO BANORTE', 18.087010, -96.129735,'images/icon_cajeros.png'],
+            ['CAJERO SANTANDER', 18.090882, -96.133342,'images/icon_cajeros.png'],
+            ['CAJERO HSBC', 18.088869, -96.132884,'images/icon_cajeros.png'],
+            ['CAJERO BANORTE', 18.093336, -96.128609,'images/icon_cajeros.png'],
+            ['CAJERO BANORTE', 18.091847, -96.130830,'images/icon_cajeros.png'],
+            ['CAJERO BANAMEX', 18.091847, -96.130830,'images/icon_cajeros.png'],
+            ['CAJERO BANORTE', 18.091847, -96.130830,'images/icon_cajeros.png'],
+            ['CAJERO HSBC', 18.091847, -96.130830,'images/icon_cajeros.png'],
+            ['CAJERO SANTANDER', 18.091847, -96.130830,'images/icon_cajeros.png'],
+            ['CAJERO BANORTE', 18.082245, -96.122232,'images/icon_cajeros.png'],
+            ['CAJERO HSBC', 18.082033, -96.128413,'images/icon_cajeros.png'],
+
+            /* @TODO Balearios */
+
+            ['EL CHARCO DE LAS RANAS', 18.095039, -96.124815, 'images/icon_balnearios.png'],
+            ['BALNEARIO SALAMANDRA', 18.095653, -96.111918, 'images/icon_balnearios.png'],
+            ['BALNEARIO JAIRO', 18.094852, -96.110828, 'images/icon_balnearios.png'],
+            ['BALNEARIO PLACERES', 18.098721, -96.109364, 'images/icon_balnearios.png'],
+
+            /* @TODO Deportivos */
+            ['UNIDAD DEPORTIVA', 18.095269, -96.130905, 'images/icon_deportivos.png'],
+            ['ESTADIO ING. GUILLERMO HERNANDEZ CASTRO', 18.093921, -96.131227, 'images/icon_deportivos.png'],
+            ['GIMNASIO DE USOS MULTIPLES "JESUS GARCIA LOPEZ"', 18.082620, -96.114105, 'images/icon_deportivos.png'],
+
+            /* @TODO Recreativos */
+            ['NIRVANA DAY SPA', 18.083993, -96.128507,'images/icon_recreativos.png'],
+            ['CLÍNICA DERMO SKIN', 18.089538, -96.135044,'images/icon_recreativos.png'],
+            ['CUIDARME', 18.082196, -96.121035,'images/icon_recreativos.png'],
+            ['TERE MAILS', 18.088862, -96.113204,'images/icon_recreativos.png'],
+            ['CIBALASER SPA', 18.081844, -96.120275,'images/icon_recreativos.png'],
+
+            /* @TODO Transportes */
+            ['BASE 13 DE TAXI', 18.089282, -96.118687,'images/icon_transportes.png'],
+            ['RADIO TAXI CANAL 32', 18.083834, -96.117999,'images/icon_transportes.png'],
+            ['TRANSPORTE TOCHTEPETL', 18.084565, -96.126232,'images/icon_transportes.png'],
+            ['TRANSPORTE DE LA SIERRA JUAREZ "TRANSJUAR"', 18.085196, -96.126425,'images/icon_transportes.png'],
+            ['TRANSPORTE TURISTICO "CHIGUANO JR"', 18.087624, -96.125700,'images/icon_transportes.png'],
+            ['ADO', 18.084976, -96.125664,'images/icon_transportes.png'],
+            ['TRANSPORTES DELA CUENCA TUXTEPEC-LOMA BONITA B17', 18.085422, -96.125158,'images/icon_transportes.png'],
          ];
-         // Info Window Content
 
         var infoWindowContent = [
 
@@ -422,25 +579,715 @@
                  '</div>'
             ],
 
-            /* @TODO SIGUIENTE NEXT*/
+            /* @TODO Pizzerias*/
             ['<div class="info_content">' +
-                 '<h3>Espadas Casablanca</h3>' +
-                 '<p>5 de Mayo 438, Tuxtepec Centro, 68300 San Juan Bautista Tuxtepec, Oax.</p>' +
-                 '<img src="images/casablanca.png" width="400" height="200">' +
+                 '<h3>DOMINOS PIZZAS </h3>' +
+                 '<p>BLVD.BENITO JUAREZ 1220, TUXTEPEC </p>' +
                  '</div>'
             ],
             ['<div class="info_content">' +
-                 '<h3>Cinemex</h3>' +
-                 '<p>Benito Juárez 795, Los Angeles, 68370 San Juan Bautista Tuxtepec, Oax.</p>' +
-                 '<img src="images/cinemexx.jpg" width="400" height="200">' +
+                 '<h3>MANA PIZZA</h3>' +
+                 '<p>CALLE VICTOR BRAVO AHUJA 649, FRACCIONAMIENTO LOS ANGELES, TUXTEPEC </p>' +
                  '</div>'
-             ],
-             ['<div class="info_content">' +
-                 '<h3>ISSTE</h3>' +
-                 '<p>La Rosalía, 68340 San Juan Bautista Tuxtepec, Oaxaca</p>' +
-                 '<img src="images/issste.jpg" width="400" height="200">' +
+            ],
+            ['<div class="info_content">' +
+                 '<h3>PIZZAS HENRY </h3>' +
+                 '<p>CALLE MORELOS 589, COL. CENTRO, TUXTEPEC </p>' +
                  '</div>'
-             ]
+            ],
+            ['<div class="info_content">' +
+                 '<h3>PIZZAS GIUSEPPE </h3>' +
+                 '<p>AV. 18 DE MARZO 1011, COL. LAZARO CARDENAS, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>PIZZERIA DOLCE VITA </h3>' +
+                 '<p>MANUEL AVILA CAMACHO</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>PIZZERIA OLEO</h3>' +
+                 '<p>Independencia 777, Centro, 68300 San Juan Bautista Tuxtepec</p>' +
+                 '</div>'
+            ],
+
+            /* @TODO Gastronomia*/
+            ['<div class="info_content">' +
+                 '<h3>ASADERO BONANZA </h3>' +
+                 '<p>AV. MANCILLA ESQUINA JUAREZ </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>COMEDOR LA SALSA </h3>' +
+                 '<p>IGNACIO ALDAMA 127 COL. CENTRO </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>DON ASADERO STAKHOUSE</h3>' +
+                 '<p>BLD. FERNANDEZ ARTEAGA 1769</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>DOÑA CRYSTI</h3>' +
+                 '<p>MELCHOR OCAMPO 497 COL. M. LUISA </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>EL CANELO</h3>' +
+                 '<p>AV. INDEPENDENCIA</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>EL PESCADOR</h3>' +
+                 '<p>AV. MANCILLA</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>LA PALAPA DE CARLIN </h3>' +
+                 '<p>EL TRIGAL</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>LA QUINTA BUGAMBILIA</h3>' +
+                 '<p>SAN BARTOLO</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>LOS MOLCAJETES </h3>' +
+                 '<p>IGNACIO ALDAMA 999 COL. SANTA FE </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>POLLOS A LA LEÑA PALMA </h3>' +
+                 '<p>AV. INDEPENDENCIA 1850, COL. LA PIRAGUA </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. LOSJAROCHOS </h3>' +
+                 '<p>CALLE DANIEL SOTO S/N, COL.MARÍA LUISA </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. JARDIN DEL EDEN (H. HACIENDA)</h3>' +
+                 '<p>BLVD. BENITO JUÁREZ 409, COL.CENTRO </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. EL PESEBRE </h3>' +
+                 '<p>BLVD. AVILA CAMACHO 435, COL.MARÌA L. </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. LAS CAZUELAS</h3>' +
+                 '<p>C. SEBASTIAN ORTÍZ No.543, COL.MA.LUISA </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. BARRO NEGRO</h3>' +
+                 '<p>CALLE ART.123 No.74, COL.MARIA LUISA, TUX</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. BLA BLA</h3>' +
+                 '<p>AV.20 DE NOVIEMBRE No.676-A COL.CENTRO</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. BUALA </h3>' +
+                 '<p>CALLE JUAREZ, 18 Y CARRANZA</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. CAMPESTRE NANIXE</h3>' +
+                 '<p>CARRET. LAS LIMAS- INF. 153</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. CAPORALES</h3>' +
+                 '<p>AV. INDEPENDENCIA 560 ALTOS, CENTRO</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. CARNITAS MICHOACAN</h3>' +
+                 '<p>C. 1o DE MAYO No.140, COL.MARIA LUISA, T.</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. CASA BLANCA</h3>' +
+                 '<p>AV. 5 DE MAYO 438, COL.CENTRO, TUX.</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. CERRO DE ORO</h3>' +
+                 '<p>SAN BARTOLO</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. CUATRO CAMINOS</h3>' +
+                 '<p>CARR.TUXTEPEC-VALLE NAL, TUX.OAX. </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. DON TIMON</h3>' +
+                 '<p>FRANCISCO Y MADERO 393 COL. M. EUGENIA </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. EL ENCANTO JAROCHO</h3>' +
+                 '<p>AV. 18 DE MARZO S/N, COL.LÁZARO CÁRD. </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. EL FARO</h3>' +
+                 '<p>AV. MEXICO S/N, FRACC.LA ESPERANZA, TUX.</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. EL FAROLITO</h3>' +
+                 '<p>AV. ROBERTO COLORADO, COL. LAZARO CARDENAS, TUXTEPEC</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. EL MANGLAR (PRINCIPE P) </h3>' +
+                 '<p>AV. INDEPENDENCIA S/N, COL. CENTRO, TUX </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. EL PARY </h3>' +
+                 '<p>IGNACIO ALLENDE 23, COL. DEL CARMEN </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. EL TIZONCITO </h3>' +
+                 '<p>AV. 5 DE MAYO, COL. CENTRO, TUX. OAX. </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. FINCA SAN ROSENDO </h3>' +
+                 '<p>CARR. TUX-PTE.CARACOL KM.16.5, TUX </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. GRILLATA </h3>' +
+                 '<p>5 DE MAYO 425, COL. CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. GUELATAO (H. WESTERN)</h3>' +
+                 '<p>AV. FCO.I. MADERO S/N, FRACC.LOS ANGELES </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. HERMILOS </h3>' +
+                 '<p>AV.20 DE NOV. 1518 ESQ.GENARO VQZ.COL.PIRAGUA, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. HUMAREDA. </h3>' +
+                 '<p>AV. ROBERTO COLORADO 805 </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. LA CARRETA </h3>' +
+                 '<p>PTE.CARACOL KM.2, TUXTEPEC, OAX.</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. LA ESTAMPIDA </h3>' +
+                 '<p>BLVD.FCO.FDZ.ARTEAGA,ESQ.RAYON 2730 </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. LA SALSA </h3>' +
+                 '<p>DOM. CON. SAN BARTOLO</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. LOS COBOS </h3>' +
+                 '<p>LOS COBOS 68330 </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. LOS GUISOS </h3>' +
+                 '<p>AV. TECNOLOGICO</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. MAR-VIC </h3>' +
+                 '<p>AV. INDEPENDENCIA S/N, COL. CENTRO, TUX </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. MOMENTOS </h3>' +
+                 '<p>BONFIL 956, COL. SANTA CLARA, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. PACO POLLO </h3>' +
+                 '<p>C. MELCHOR OCAMPO 266, CENTRO, TUX. </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. PARRILLA MAR YTIERRA </h3>' +
+                 '<p>AV. 18 DE MARZO 135, COL. SANTA CLARA, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. PASO REAL </h3>' +
+                 '<p>AV. INDEPENDENCIA 584, COL. CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. RULOS </h3>' +
+                 '<p>AV. J. CARRANZA 229, COL.CENTRO, TUX. </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. SALAMANDRA </h3>' +
+                 '<p>SAN BARTOLO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. TAMPICO </h3>' +
+                 '<p>BLVD. MANUEL AVILA CAMACHO, COL.LAZARO CARDENAS, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST.LA SUPER TORTA </h3>' +
+                 '<p>CALLE MORELOS 139, CENTRO, TUX. </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST.TAQUERIALUPITA 2</h3>' +
+                 '<p>BLVD.AVILACAMACHO438,COL.STA.FE </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>TAQUERIA EL REPOSO </h3>' +
+                 '<p>AV. LIBERTAD 407, COL. CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>TAQUERIA LUPITA </h3>' +
+                 '<p>CALLE 23 DE SEPTIEMBRE COL.MARIA LUISA </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST.CROSTINI </h3>' +
+                 '<p>CALLE HIDALGO ESQ. ROBERTO COLORADO </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. FUSSION </h3>' +
+                 '<p>CALLE MIGUEL HIDALGO No.980, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>LA VENDIMIA </h3>' +
+                 '<p>MURO BLVD.FCO.FERNANDEZ ARTEAGA S/N, COL SANTA FE </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>EL TACOTE </h3>' +
+                 '<p>CALLE ALDAMA CASI ESQ.20 NOVIEMBRE, COL. CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>EMPORIO TACO </h3>' +
+                 '<p>AV. 5 DE MAYO No.466, COL.CENTRO TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>REST. FERVOLIA 86 </h3>' +
+                 '<p>CALLE SEBASTIAN ORTIZ 226, COL.REPOSO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>MARISCOS LA OAXAQUEÑA </h3>' +
+                 '<p>CALLE MIGUEL HIDALGO 1074, COL. MIGUEL HIDALGO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>VIPS </h3>' +
+                 '<p>MULTIPLAZA BENITO JUAREZ, 795, FRACC.LOS ANGELES, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>MC DONALDS </h3>' +
+                 '<p>BLVD. BENITO JUAREZ 1117, FRACC. LOS ANGELES, TUXTEPEC</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>BURGER KING </h3>' +
+                 '<p>MULTIPLAZA BENITO JUAREZ, 795, FRACC.LOS ANGELES, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+
+            /* @TODO Parques */
+            ['<div class="info_content">' +
+                 '<h3>PARQUE BENITO JUAREZ </h3>' +
+                 '<p>AV. 5 DE MAYO, FRENTE AL PALACIO MUNICIPAL, COL. CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>PARQUE MIGUEL HIDALGO </h3>' +
+                 '<p>CALLE AGUSTIN ITURBIDE, FRENTE A LA PARROQUIA DE GUADALUPE, COL. LA PIRAGUA </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>PARQUE JESUS CARRANZA </h3>' +
+                 '<p>AV.JESUS CARRANZA, ESQ. NICOLAS BRAVO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>PARQUE BICENTENARIO </h3>' +
+                 '<p>BLVD.MANUEL AVILA CAMACHO, ESQ.ROBERTO COLORADO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>MALECON VICTOR BRAVO AHUJA </h3>' +
+                 '<p>MURO BLVD.FRANCISCO FERNANDEZ ARTEAGA, ESQ. HIDALGO, COL.CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>MALECON EL MIRADOR </h3>' +
+                 '<p>AV. INDEPENDENCIA, ENTRE MATAMOROS Y ALDAMA, COL.CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>PARQUE LINEAL BENITO JUAREZ </h3>' +
+                 '<p>BLVD. BENITO JUAREZ, FRENTE AL CBTIS 107, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>PARQUE EL FLAMENCO </h3>' +
+                 '<p>MURO BLVD. FRANCISCO FERNANDEZ ARTEAGA, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>EL PRELUDIO DEL BRINCO (LA TIERRA DEL CONEJO) </h3>' +
+                 '<p>CALLE 2 DE SEPTIEMBRE No.91, COL. VÍCTOR BRAVO AHUJA, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>ESTATUA LA FLOR DE PIÑA </h3>' +
+                 '<p>BLVD. BENITO JUÁREZ Y AV. 5 DE MAYO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CASA DE LA CULTURA DR. VICTOR BRAVO AHUJA </h3>' +
+                 '<p>CALLE DANIEL SOTO,ESQ. BLVD. BENITO JUAREZ, COL. MARIA LUISA TUXTEPEC</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>TEATRO MIGUEL HIDALGO </h3>' +
+                 '<p>CALLE ALLENDE ENTRE AV. LIBERTAD Y 5 DE MAYO, COL. CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>TEATRO CASA DE LA CULTURA "DR. VICTOR BRAVO AHUJA" </h3>' +
+                 '<p>CALLE DANIEL SOTO,ESQ. BLVD. BENITO JUAREZ, COL. MARIA LUISA TUXTEPEC</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CINEMEX </h3>' +
+                 '<p>BLVD. BENITO JUAREZ 795, FRACC. LOS ANGELES, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>MULTIPLAZA TUXTEPEC </h3>' +
+                 '<p>BLVD. BENITO JUAREZ 795, FRACC. LOS ANGELES, TUXTEPEC</p>' +
+                 '</div>'
+            ],
+
+            /* @TODO Moteles */
+            ['<div class="info_content">' +
+                 '<h3>QUINTA LAS PALOMAS </h3>' +
+                 '<p>CARR.LOMA ALTA No.4, COL. EL PEDREGAL, TUX </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>EL SECRETO </h3>' +
+                 '<p>CALLE 2 SEPTIEMBRE No.113, COL.VICTOR BRAVO AHUJA, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>VENUS </h3>' +
+                 '<p>CALLE GRAL.IGNACIO LOPEZ RAYON No.1432, C </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>SEDUCCION </h3>' +
+                 '<p>CALLE TULIPANES No.67, COL. LORENA, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>OLYMPO </h3>' +
+                 '<p>CAMINO AL PORVENIR, COL. EL DIAMANTE PRIV.ALVARO OBREGON S/N, COL. DEL</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>LAS BRISAS </h3>' +
+                 '<p>CARMEN, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>EL REPOSO </h3>' +
+                 '<p>BLVD. BENITO JUAREZ 1564, COL.MARIA LUISA, TUXTEPEC, OAX.</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>EL REPOSO 2 </h3>' +
+                 '<p>C. AGUSTIN MELGAR No.49, COL. DEL CARMEN, TUXTEPEC</p>' +
+                 '</div>'
+            ],
+
+            /* @TODO Bancos */
+            ['<div class="info_content">' +
+                 '<h3>SCOTIABANK </h3>' +
+                 '<p>AV. INDEPENDENCIA 493, CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>BBVA BANCOMER</h3>' +
+                 '<p>AV.5 DE MAYO 713, CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>BBVA BANCOMER </h3>' +
+                 '<p>AV. INDEPENDENCIA S/N, CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>SANTANDER MULTIPLAZA </h3>' +
+                 '<p>C.FRANCISCO I. MADERO, FRACC.LOS ANGELES, MULTIPLAZA TUXTEPEC</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>BANCO FORJADORES </h3>' +
+                 '<p>AV. INDEPENDENCIA 1011, CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>SANTANDER </h3>' +
+                 '<p>CALLE MORELOS ESQ.20 NOVIEMBRE, COL.CENTRO, TUXTEPEC</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>HSBC </h3>' +
+                 '<p>AV. INDENPENDENCIA 1187, COL. CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>INBURSA </h3>' +
+                 '<p>C.FRANCISCO I. MADERO, FRACC.LOS ANGELES, MULTIPLAZA, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>BANAMEX</h3>' +
+                 '<p>AV. INDEPENDENCIA, CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJA POPULAR MEXICANA </h3>' +
+                 '<p>AV. 20 DE NOVIEMBRE 1370, CENTRO, TUXTEPEC</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>BANORTE </h3>' +
+                 '<p>AV. 5 DE MAYO No. 697, CENTRO, TUXTEPEC     </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>BANCO AZTECA </h3>' +
+                 '<p>AV. INDEPENDENCIA 508, CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+
+            /* @TODO Cajeros */
+            ['<div class="info_content">' +
+                 '<h3>CAJERO BANORTE </h3>' +
+                 '<p>AV. 5 DE MAYO, PLANTA BAJA DEL PALACIO MPAL. </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJERO BANORTE </h3>' +
+                 '<p>CALLE GUERRERO, PLANTA BAJA DEL PALACIO MUNICIPAL </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJERO BANCOMER </h3>' +
+                 '<p>AV. 5 DE MAYO, PLANTA BAJA DEL PALACIO MPAL. </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJERO SCOTIABANK </h3>' +
+                 '<p>AV. INDEPENDENCIA 493, CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJERO BANORTE </h3>' +
+                 '<p>AV. JESUS CARRANZA, INSTALACIONES HOSPITAL GENERAL</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJERO SANTANDER </h3>' +
+                 '<p>AV. FRANCISCO I. MADERO, FRACCIONAMIENTO LOS ANGELES, MULTIPLAZA TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJERO HSBC </h3>' +
+                 '<p>INTERIOR BODEGA AURRERA </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJERO BANORTE </h3>' +
+                 '<p>BLVD. BENITO JUAREZ, FRACC. COSTA VERDE INMEDIACIONES GASOLINERA COSTA VERDE</p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJERO BANCOMER </h3>' +
+                 '<p></p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>BLVD. BENITO JUAREZ, INTERIOR TIENDAS CHEDRAUI </h3>' +
+                 '<p></p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJERO BANAMEX </h3>' +
+                 '<p>BLVD. BENITO JUAREZ, INTERIOR TIENDAS CHEDRAUI </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJERO BANORTE </h3>' +
+                 '<p>BLVD. BENITO JUAREZ, INTERIOR TIENDAS CHEDRAUI </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJERO HSBC </h3>' +
+                 '<p>BLVD. BENITO JUAREZ, INTERIOR TIENDAS CHEDRAUI </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJERO SANTANDER </h3>' +
+                 '<p>BLVD. BENITO JUAREZ, INTERIOR TIENDAS CHEDRAUI </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJERO BANORTE </h3>' +
+                 '<p>AV. 5 DE MAYO, CENTRO (INMEDIACIONES DE LA INSTITUCION) </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CAJERO HSBC </h3>' +
+                 '<p>AV. INDEPENDENCIA 1187, CENTRO, TUXTEPEC</p>' +
+                 '</div>'
+            ],
+
+            /* @TODO Balnearios */
+            ['<div class="info_content">' +
+                 '<h3>EL CHARCO DE LAS RANAS </h3>' +
+                 '<p>MURO BLVD.FRANCISCO FERNANDEZ ARTEAGA Y CALLE 16 DE SEPTIEMBRE, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>BALNEARIO SALAMANDRA </h3>' +
+                 '<p>AV. EMILIANO ZAPATA, SAN BARTOLO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>BALNEARIO JAIRO </h3>' +
+                 '<p>AV. EMILIANO ZAPATA, SAN BARTOLO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>BALNEARIO PLACERES</h3>' +
+                 '<p>CALLE REVOLUCION, SAN BARTOLO </p>' +
+                 '</div>'
+            ],
+
+            /* @TODO Deportivos */
+            ['<div class="info_content">' +
+                 '<h3>UNIDAD DEPORTIVA </h3>' +
+                 '<p>CALLE 2 #648, FRACC.JORGE L. TAMAYO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>ESTADIO ING. GUILLERMO HERNANDEZ CASTRO </h3>' +
+                 '<p>CALLE FRANCISCO I. MADERO, FRACC. COSTA VERDE, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>GIMNASIO DE USOS MULTIPLES "JESUS GARCIA LOPEZ" </h3>' +
+                 '<p>AV. LIBERTAD Y HERMENEGILDO GALEANA, COL. SANTA CLARA, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+
+            /* TODO Recreativos */
+            ['<div class="info_content">' +
+                 '<h3>NIRVANA DAY SPA </h3>' +
+                 '<p>AV. 5 DE MAYO 1375, COLONIA LA PIRAGUA, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CLÍNICA DERMO SKIN </h3>' +
+                 '<p>CALLE FRANCISCO I. MADERO No.376, COL. MARIA EUGENIA, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CUIDARME </h3>' +
+                 '<p>AV. 5 DE MAYO #574-A, ENTRE JUAREZ Y RAYON, CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>TERE MAILS </h3>' +
+                 '<p>MANCILLA ESQ. NICOLAS BRAVO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>CIBALASER SPA </h3>' +
+                 '<p>AV. 5 DE MAYO, COL. CENTRO </p>' +
+                 '</div>'
+            ],
+
+            /* @TODO Transportes */
+            ['<div class="info_content">' +
+                 '<h3>BASE 13 DE TAXI </h3>' +
+                 '<p>AV. ROBERTO COLORADO S/N, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>RADIO TAXI CANAL 32 </h3>' +
+                 '<p>AV. JESUS CARRANZA 286, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>TRANSPORTE TOCHTEPETL </h3>' +
+                 '<p>AV. LIBERTAD No.1144, /PONCIANO MEDINA Y SANTOS DEGOLLADO, CENTRO </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>TRANSPORTE DE LA SIERRA JUAREZ "TRANSJUAR" 	</h3>' +
+                 '<p>AV. 5 DE MAYO CASI ESQ. OCAMPO, CENTRO </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>TRANSPORTE TURISTICO "CHIGUANO JR" </h3>' +
+                 '<p>AV. MANUEL AVILA CAMACHO 208, COL. LAZARO CARDENAS, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>ADO </h3>' +
+                 '<p>CALLE MARIANO MATAMOROS 383, CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
+            ['<div class="info_content">' +
+                 '<h3>TRANSPORTES DELA CUENCA TUXTEPEC-LOMA BONITA 	</h3>' +
+                 '<p>CALLE MARIANO MATAMOROS, CENTRO, TUXTEPEC </p>' +
+                 '</div>'
+            ],
          ];
 
         function geoSuccess(position) {
@@ -458,6 +1305,272 @@
                 zoom: 6,
                 mapTypeControl: false,
                 center: {lat: -34.397, lng: 150.644},
+                styles:
+                [
+                  {
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#ebe3cd"
+                      }
+                    ]
+                  },
+                  {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#515A61"
+                      }
+                    ]
+                  },
+                  {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                      {
+                        "color": "#f5f1e6"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "administrative",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "visibility": "off"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                      {
+                        "color": "#c9b2a6"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                      {
+                        "color": "#b6d266"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#ae9e90"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "landscape.natural",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#c1d2ae"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi",
+                    "stylers": [
+                      {
+                        "visibility": "off"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#dfd2ae"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#93817c"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi.park",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                      {
+                        "color": "#a5b076"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#447530"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#f5f1e6"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                      {
+                        "visibility": "off"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#FFCC80"
+                      },
+                      {
+                        "weight": 1.5
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#FFECB3"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                      {
+                        "color": "#e9bc62"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.highway.controlled_access",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#e98d58"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.highway.controlled_access",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                      {
+                        "color": "#db8555"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#fcf6f5"
+                      },
+                      {
+                        "weight": 1
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.local",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#806b63"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "transit",
+                    "stylers": [
+                      {
+                        "visibility": "off"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#57d2ae"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "transit.line",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#8f7d77"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "transit.line",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                      {
+                        "color": "#ebe3cd"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "transit.station",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#dfd2ae"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "water",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                      {
+                        "color": "#76dbe5"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#92998d"
+                      }
+                    ]
+                  }
+                ]
+
             };
             var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
             // Apply new JSON when the user chooses to hide/show features.
@@ -534,7 +1647,7 @@
                 map.fitBounds(bounds);
             }
 
-            map.setOptions({styles: styles['hide']});
+            //map.setOptions({styles: styles['hide']});
 
         }
 
